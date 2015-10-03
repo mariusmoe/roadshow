@@ -2,6 +2,7 @@
 .classpath
 .settings/
 build
+build2
 target
 .gradle
 /.nb-gradle/private/
