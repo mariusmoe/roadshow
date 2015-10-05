@@ -14,7 +14,7 @@ apply plugin: 'com.bmuschko.cargo-base'
 // you must chose set a trainingUserName, which gives you your own deploy path on Tomcat
 // and your own artifact repository 
 
-ext.trainingUserName = 'mytrainingusername' // it is a good idea to chose the same as your github id
+ext.trainingUserName = 'andrey9kin' // it is a good idea to chose the same as your github id
 
 ext {
 artifactoryUrlAndPort = System.properties.artifactoryUrlAndPort ?: "http://roadshowartifactory:8081/artifactory"
@@ -30,13 +30,12 @@ trainingUserWebappDir = System.properties.trainingUserWebappDir ?: trainingUserN
 deployPath = System.properties.deployPath ?: "${trainingUserWebappDir}/${appName}-${deployContext}"
 
 buildNumber = System.properties.buildNumber ?: "SNAPSHOT"
+versionMajor = System.properties.versionMajor ?: "0"
+versionMinor = System.properties.versionMinor ?: "0"
+versionPatch = System.properties.versionPatch ?: "51"
 } 
 
 group = 'net.praqma.roadshow.buep' // FIXME - add your initials or github id here
-
-ext.versionMajor = "0"
-ext.versionMinor = "0"
-ext.versionPatch = "51"
 
 version = "${versionMajor}.${versionMinor}.${versionPatch}-${buildNumber}"
 
