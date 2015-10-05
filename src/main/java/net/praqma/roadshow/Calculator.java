@@ -22,6 +22,8 @@ public class Calculator extends HttpServlet implements Serializable{
     //private static final long serialVersionUID = 1L;
     private static final CalculatorModel model = new CalculatorModelImpl();
 
+    // FIXME
+    // One more fixme
     public Calculator() {
         super();
         String dummy = new String();
