@@ -30,9 +30,9 @@ trainingUserWebappDir = System.properties.trainingUserWebappDir ?: trainingUserN
 deployPath = System.properties.deployPath ?: "${trainingUserWebappDir}/${appName}-${deployContext}"
 
 buildNumber = System.properties.buildNumber ?: "SNAPSHOT"
-versionMajor = System.properties.versionMajor ?: "0"
-versionMinor = System.properties.versionMinor ?: "0"
-versionPatch = System.properties.versionPatch ?: "51"
+versionMajor = System.properties.versionMajor ?: "1"
+versionMinor = System.properties.versionMinor ?: "1"
+versionPatch = System.properties.versionPatch ?: "0"
 } 
 
 group = 'net.praqma.roadshow.buep' // FIXME - add your initials or github id here
