@@ -6,3 +6,4 @@ build2
 target
 .gradle
 /.nb-gradle/private/
+*~
